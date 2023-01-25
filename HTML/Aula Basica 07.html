@@ -1,0 +1,38 @@
+<html>
+<head>
+        
+        <title>Formulário Elaborado</title>
+        <fieldset>
+        <p>Dados Pessois</p>
+        <label>Nome: <input type="text" name="nome" maxlength="25" size="15"></label><br>
+        <label>Idade <input type="text" name="idade" maxlength="2" size="2"></label><br>
+        </fieldset>
+</head>
+<body>
+    <form action="gravar.php" method="get">
+        <fieldset>
+            <p>Dados Profissionais</p>
+            <label>Escolaridade:
+                <select name="escolaridade" id="box">
+                    <option value="em"> Ensino Médio </option>
+                    <option value="nt"> Nível Técnico </option>
+                    <option value="ns"> Nível Superior</option>
+                </select>
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="cargo" value="1" checked> Gerência
+                <input type="radio" name="cargo" value="2"> Financeiro
+                <input type="radio" name="cargo" value="3"> Recepção
+                <input type="radio" name="cargo" value="4"> Administrativo <br>
+                <input type="checkbox" name="area1" value="com"> Computação
+                <input type="checkbox" name="area2" value="eng"> Engenharia
+                <input type="checkbox" name="area3" value="bio"> Biologia
+                <input type="checkbox" name="area4" value="psi"> Psicologia <br>
+                <p>Observações: <br><textarea name="obs" id="text" cols="20" rows="7"></textarea></p>
+                <input type="reset" value="Limpar">
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

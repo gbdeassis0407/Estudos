@@ -1,0 +1,42 @@
+<html>
+<head> 
+        <title>Formulário</title>
+        <h1>Formulário</h1>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>Nome: <input type="text" name="nome" maxlength="25" size="15"></label><br>
+            <label>Endereço: <input type="text" name="Endereço" maxlength="30" size="20"></label><br>
+            <label>Cidade: <input type="text" name="cidade" size="15"></label> <br>
+            <label> Estado:
+                <select name="Estado" id="Estado">
+                    <option value="sp"> São Paulo</option>
+                    <option value="rj"> Rio de Janeiro</option>
+                    <option value="es"> Espirito Santos</option>    
+                </select>
+        </label>
+        </fieldset>
+</head> <br>
+<body>
+    <form action="gravar.php" method="get">
+        <fieldset aria-valuetext="Dados Profissionais">     
+            <legend>Natureza do Cargo </legend>
+                <input type="radio" name="cargo" value="1" checked> Gerência
+                <input type="radio" name="cargo" value="2"> Financeiro
+                <input type="radio" name="cargo" value="3"> Recepção
+                <input type="radio" name="cargo" value="4"> Administrativo
+                <input type="radio" name="cargo" value="5"> Jurídico <br> 
+            </label><br>
+            <label> Área de interesse <br>
+                <input type="checkbox" name="area1" value="com"> Computação
+                <input type="checkbox" name="area2" value="bio"> Biologia
+                <input type="checkbox" name="area3" value="mia"> Meio Ambiente
+                <input type="checkbox" name="area4" value="eng"> Engenharia
+                <input type="checkbox" name="area5" value="his"> História
+                <p>Observações:<textarea name="obs" id="text" cols="45" rows="6"></textarea></p>
+            </label>
+        </fieldset><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
