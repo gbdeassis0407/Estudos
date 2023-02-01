@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 03 - JS</title>
+</head>
+<body>
+    <script>
+        var nome = 'Guilherme';
+        var sobrenome = 'Borges';
+        var idade = 32;
+        // var pessoa = ['Guilherme', 'Borges', '35'];
+        // array melhor para lista de objetos
+        var frutas = ['laranja', 'abacate','melancia','abacaxi'];
+        // Objeto melhor para especifição como pessoa
+        var pessoa = {
+            nome:'Guilherme',
+            sobrenome:'Borges', 
+            idade:25, 
+            andar: function(){
+                alert('caminhando');
+            }
+        };
+        //Metodo para adicionar valores no array em sua ultima psoição
+        frutas.push('pitanga');
+        // Remove o ultimo elemento do array
+        frutas.pop();
+        // retira o primeiro elemento do array
+        frutas.shift();
+        // Para adicionar o elemento na primeira posição do array
+        frutas.unshift('pitanga');
+        // faz a ordenação do array em ordem alfabetica ou demais
+        frutas.sort();
+        // Inverte a ordem do array
+        frutas.reverse();
+
+        // console.log(pessoa['idade']);
+        // console.log(frutas.length); // tamanho do array
+        // console.log(frutas.toString()); // transforma o array em string
+        // console.log(frutas.join(' - ')); //junta todos os elementos do array com sinal ou valor que atribuito na função join
+        console.log(frutas); 
+        
+    </script>
+</body>
+</html>

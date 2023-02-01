@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 05 - JS</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+        // var d = new Date(86400000);
+        // var d = new Date(string);
+        // var d = new Date(ano, mes, dia, hora, minuto, segundo, milisegundos)
+
+        // console.log(d.toUTCString());  //Wed, 01 Feb 2023 20:03:47 GMT
+        // console.log(d.toDateString()); //Wed Feb 01 2023
+        // console.log(d);                //Wed Feb 01 2023 17:03:55 GMT-0300 (Horário Padrão de Brasília)
+
+        // console.log('getDate ' + d.getDate());
+        // console.log('getDay ' + d.getDay()); // 0: dom, 1: seg, 2: ter, 3:quar, 4:quinta, 5:sexta, 6:sabado 
+        // console.log('getFullyYear ' + d.getFullYear());
+        // console.log('getHours ' + d.getHours());
+        // console.log('getMilliseconds ' + d.getMilliseconds());
+        // console.log('getMinutes ' + d.getMinutes());
+        // console.log('getMonth ' + d.getMonth()); // 0: jan, 1:fev
+        // console.log('getSeconds ' + d.getSeconds());
+        // console.log('getTime ' + d.getTime());
+
+        // d.setDate(17); // setar datas
+
+        function formataData( data = new Date()){
+            var dia = data.getDate();
+            var mes = data.getMonth()+1;
+            var ano = data.getFullYear();
+
+            if(dia.toString().length == 1) dia = '0'+dia;
+            if(mes.toString().length == 1) mes = '0'+mes;
+
+            return dia+'/'+mes+'/'+ano;
+        }
+
+        console.log(formataData());
+        
+    </script>
+</body>
+</html>

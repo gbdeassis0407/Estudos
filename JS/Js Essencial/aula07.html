@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 07 - JS</title>
+</head>
+<body>
+    <p>Informe um Número entre 10 e 20</p>
+    <input type="text" id="numero">
+    <button onclick="verifica()">verificar</button>
+    <p id="msg"></p>
+    <script>
+        function verifica(){
+            var x = document.getElementById('numero').value;
+            try{
+            // Personalização de Erro do try catch
+                if(x == '') throw 'Informe um valor';
+                if(isNaN(x)) throw 'Você precisa informar um número';
+                x = Number(x);
+                if(x < 10 || x > 20) throw 'Informe um número entre 10 e 20';
+
+                document.getElementById('msg').innerHTML =  'Perfeito!, Você digitou o número: '+x;
+            } catch(erro){
+                document.getElementById('msg').innerHTML =  'Erro: '+erro;
+            //Executa mesmo depois do erro
+            }finally{
+                //Limpa campo
+                document.getElementById('numero').value = '';
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

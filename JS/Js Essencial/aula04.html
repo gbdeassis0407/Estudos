@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 04 - JS</title>
+</head>
+<body>
+    <script>
+        // var txt = 'Pegou fogo na caixa d\'água';
+        // var txt = "\"talvez eu tenha tacado fogo\", a caixa d'agua esta pegando fogo";
+        // var txt = '"talvez eu tenha tacado fogo", a caixa d\'agua esta pegando fogo';
+        // var txt = 'pegou fogo \\ agora tem que apagar';
+        // var txt = 'Pegou fogo na caixa d\'água';
+        var txt = 'Para aprender JavaScript pesquise no Google';
+        var numero = 98.685;
+
+        // Quantidade de variaveis no texto
+        console.log(txt.length); 
+
+        // encontra a palavra ou frase na primeira que acontecer e retorna a posição que acontece
+        console.log(txt.indexOf('aprender')); 
+
+        // Traz a posição da ultima ocorrencia da palavra
+        console.log(txt.lastIndexOf('aprender'));
+
+        // aceita expressões regulares e traz a posição da palavra
+        console.log(txt.search('aprender'));
+
+        //Extrai posições da string e retorno o que esta escrito
+        console.log(txt.slice(0, 4));
+
+        //Faz a mesma coisa de slice
+        console.log(txt.substring(37, 43));
+        
+        //poem a posição do conteudo que quer extrai e quantas posições a frente
+        console.log(txt.substr(14, 10));
+
+        // Faz a substituição da primeira palavra achado pela sugerida
+        console.log(txt.replace('Google', 'youtube'));
+
+        //Maiuscula
+        console.log(txt.toUpperCase());
+
+        //minuscula
+        console.log(txt.toLowerCase());
+
+        //fixa as casas decimais sempre com aproximação
+        console.log(numero.toFixed(2));
+
+        //retorna 2 DIGITOS e não casas decimais sempre com aproximação
+        console.log(numero.toPrecision(2));
+
+    </script>
+</body>
+</html>
