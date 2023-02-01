@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula02 - JS</title>
+</head>
+<body>
+    <script>
+        /* 
+        Uma função nada mais é que um bloco de código que executa uma determinada tarefa
+        Uma função somente é executada mediante uma chamada específica a ela 
+         */
+        var msg = 'msg padrão';
+        function alerta(mensagem){
+            // alert(msg);
+            msglocal = mensagem;
+        }
+
+        function dividir(num, por = 2){
+            // função com return executa a tarefa e retorna o valor
+            return num / por;
+        }
+        alerta('msg via parârametro');
+        alert(msglocal);
+        // alerta();
+
+
+
+    </script>
+</body>
+</html>
