@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 10_part2 - JS</title>
+</head>
+<body>
+    <div id="msg">
+        
+    </div>
+    <input type="button" value="Cancelar" onclick="clearInterval(msg)"/>
+    <input type="button" value="Voltar" onclick=""/>
+    <script>    
+        // Salvar alguma coisa no proprio browser do usuario ex login e senha
+        // window.localStorage.setItem('nome', 'Guilherme');
+
+        // salvar por sessãos os dados
+        // window.sessionStorage.setItem('nome2', 'Willson');
+
+        //abre uma janela a parte meio inutil browser e pode manipular
+        // var janela = window.open('','','width=500, height=400');
+        // janela.document.write('Isso e um texto para minha janela popup');
+        // janela.opener.document.write('Isso e um texto para minha janela principal')
+
+        // var msg = setTimeout(msgtimeout, 5000);
+        // function msgtimeout(){
+        //     console.log('msg via timeout')
+        // }
+       
+        // var msg = setInterval(msginterval, 1000);
+
+        // função para detectar se o usuario esta na pagina designada
+        var intervalo = setInterval(verificaFoco, 1000);
+        var contador = 0;
+        function verificaFoco(){
+            if(document.hasFocus()){
+                contador++;
+                console.log(contador);
+                if(contador >= 10){
+                    msgtimeout();
+                    clearInterval(intervalo);
+                }
+            }
+        }
+        function msgtimeout(){
+           document.getElementById('msg').innerHTML = 'Obrigado por visitar a minha pagina';
+        }
+
+        // function msginterval(){
+        //     console.log('msg via inverval');
+        // }
+
+
+    </script>
+</body>
+</html>

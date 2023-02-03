@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 09 - JS</title>
+</head>
+<!-- <body onload="funcao()"> -->
+<body>
+
+
+    <!-- <p id="demo"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+    <div class="exemplo"></div> -->
+
+    <!-- <img id="imagem" src="imagem.jpg" alt="Texto alternativo"> -->
+
+    <!-- <p id="demo" >Isso é um teste</p> -->
+
+    <!-- evento on click -->
+    <!-- <h1 id="demo">clique aqui</h1> -->
+
+    <!-- <select name="" id="demo" onchange="funcao()">
+        <option value="opcao1">opção1</option>
+        <option value="opcao2">opção2</option>
+        <option value="opcao3">opção3</option>
+    </select> -->
+
+    <!-- <input type="text" id="demo" onchange="funcao()"> -->
+
+    <h1 id="demo" onmouseover="funcao1(this)" onmouseout="funcao2(this)">Passe o mouse aqui</h1>
+
+    <script>
+        /* Formas de Buscar elementos dentro do DoM */
+        // document.getElementById('demo').innerHTML = 'Texto do mue parágrafo';
+        // console.log(document.getElementsByTagName('p'));
+
+        /* Formas de atacar o array e manipular informações dentro do DoM */
+        // var x = document.getElementsByClassName('exemplo');
+        // x[0].innerHTML = 'Texto 0'; 
+        // x[1].innerHTML = 'Texto 1'; 
+        // x[2].innerHTML = 'Texto 2'; 
+
+        /* selecionando metos DoM com certo filtro */
+        // var x = document.querySelectorAll('p.exemplo');
+        // console.log(x);
+
+        /* 
+        document.baseURI / document.body / document.doctype / document.documentURI / document.domain / document.head
+        document.inputEncoding / document.lastModified / document.title / document.URL
+        document.forms / document.links / document.images / document.script
+        */
+
+        // document.write('Isso é um teste');
+
+        // mudar valor de atributos
+        // document.getElementById('imagem').alt = 'texto 2';
+
+        // mudar o css
+        // document.getElementById('demo').style.color = 'red';
+
+        // Função on click
+        // function funcao(elemento){
+        //     elemento.innerHTML = 'Obrigado!';
+        // }
+        
+        // outra função on click
+        // function funcao(){
+        //     document.getElementById('demo').innerHTML = 'Obrigado!';
+        // }
+
+        // document.getElementById('demo').onclick = funcao;
+
+        // Função onload pagina
+        // function funcao(){
+        //     alert('Página carregada!');
+        // }
+
+        // oncharge mudança em formularios
+        // function funcao(){
+        //     alert('opção alterada');
+        // }
+        // document.getElementById('demo').onclick = funcao;
+
+        // funcao para chamar quando o mouse esta sobre o elemento
+        function funcao1(elemento){
+            elemento.innerHTML = 'Ok, mouse sobre o elemento';
+        }
+
+        function funcao2(elemento){
+            elemento.innerHTML = 'Passe o mouse aqui'
+        }
+ 
+        /* 
+        onclick / onload / onchange / onmouseover / onmouseout
+        onfocus / onmousedown / onmouseup
+        */
+
+
+    </script>
+</body>
+</html>
