@@ -18,8 +18,7 @@ def Saque():
                 total_cedula += 1
             else:
                 if total_cedula > 0:
-                    print(
-                        f"Foram sacadas total de {total_cedula} de cedulas de R$ {cedula}")
+                    print(f"Foram sacadas total de {total_cedula} de cedulas de R$ {cedula}")
                 if cedula == 100:
                     cedula = 50
 
